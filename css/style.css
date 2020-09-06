@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+    --main-bg-color:  #0D3F34;
+    --main-nav-bg-color: #135A4A;
+    --book-font-color:#75B0A4;
+    --white: #FBFCFD;
+}
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    color: var(--white);
+    background-color: var(--main-bg-color);
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 65% 35%;
+}
+
+#logo{
+    background-color: var(--white);
+    color: var(--main-bg-color);
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.left ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+.left ul li{
+    padding: 30px;
+}
+
+
+.left .nav-bar{
+    background-color: var(--main-nav-bg-color);
+    height: 90px;
+}
+
+.book{
+    position: relative;
+    left: 100px;
+    top: 25%;
+}
+
+.book h2{
+    color: var(--book-font-color);
+    font-size: 30px;
+}
+
+.book h1{
+    font-size: 7em;
+    margin-bottom: 10px;
+}
+
+.book .btn{
+    border: solid white 2px;
+    width: 100px;
+    text-align: center;
+    padding: 10px 15px;
+    
+}
+
+.img h2{
+    background-color: var(--book-font-color);
+    opacity: 0.8;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    position: relative;
+    top:90.5%;
+}
+
+
+.right .img{
+    height: 80vh;
+    background-image: url('/img/coffee.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+}
+
+.right .footer{
+    text-align: center;
+    height: 20vh;
+    color: var(--main-bg-color);
+    background-color: var(--white);
+}
+
+.content{
+    font-size: 2em;
+    position: relative;
+    top: 20px;
+}
